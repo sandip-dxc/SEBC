@@ -105,12 +105,6 @@ Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-MariaDB [(none)]> create database scm DEFAULT CHARACTER SET utf8;
-Query OK, 1 row affected (0.00 sec)
-
-MariaDB [(none)]> grant all on scm.* TO 'scm'@'%' IDENTIFIED BY 'scm';
-Query OK, 0 rows affected (0.00 sec)
-
 MariaDB [(none)]> create database amon DEFAULT CHARACTER SET utf8;
 Query OK, 1 row affected (0.00 sec)
 
@@ -173,7 +167,7 @@ MariaDB [(none)]> select * from information_schema.schemata;
 | def          | navms              | utf8                       | utf8_general_ci        | NULL     |
 | def          | performance_schema | utf8                       | utf8_general_ci        | NULL     |
 | def          | rman               | utf8                       | utf8_general_ci        | NULL     |
-| def          | scm                | utf8                       | utf8_general_ci        | NULL     |
 | def          | sentry             | utf8                       | utf8_general_ci        | NULL     |
 +--------------+--------------------+----------------------------+------------------------+----------+
-11 rows in set (0.00 sec)
+10 rows in set (0.00 sec)
+
