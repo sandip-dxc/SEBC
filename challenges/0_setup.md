@@ -53,3 +53,32 @@
 <br></br>
 <br></br>
 
+
+<br>Group and user add - Executed as a script</br>
+
+<br><code>groupadd kiwis -g 9980;</code></br>
+<br><code>groupadd aussies -g 9990;</code></br>
+<br><code>useradd -G aussies -u 2300 -p $(openssl passwd -1 welcome123) -s /bin/bash -m -d /home/cate -c "cate, Hadoop Aussie" cate;</code></br>
+<br><code>useradd -G kiwis -u 2900 -p $(openssl passwd -1 welcome123) -s /bin/bash -m -d /home/jemaine -c "jemaine, Hadoop Kiwi" jemaine;</code></br>
+
+<br></br>
+
+<br>Listing of users and groups</br>
+<br><code>grep 'kiwis\|aussies' /etc/group;</code></br>
+
+<br><code>[root@ip-172-31-13-124 ~]# grep 'kiwis\|aussies' /etc/group</code></br>
+<br><code>kiwis:x:9980:jemaine</code></br>
+<br><code>aussies:x:9990:cate</code></br>
+
+
+<br><code>grep 'cate\|jemaine' /etc/passwd;</code></br>
+
+<br><code>[root@ip-172-31-13-124 ~]# grep 'cate\|jemaine' /etc/passwd</code></br>
+<br><code>cate:x:2300:2300:cate, Hadoop Aussie:/home/cate:/bin/bash</code></br>
+<br><code>jemaine:x:2900:2900:jemaine, Hadoop Kiwi:/home/jemaine:/bin/bash</code></br>
+
+
+
+<br></br>
+
+<br>/************** END OF ISSUE # 1 ***************/</br>
