@@ -1,8 +1,6 @@
 <br>/************** START OF CHALLENGE # 1 ************/</br>
 
 <br>Yum Repository</br>
-<br></br>
-<br><code>
 
 <br><code>[root@ip-172-31-13-124 ~]# yum list all|grep mariadb-server</code></br>
 <br></br>
