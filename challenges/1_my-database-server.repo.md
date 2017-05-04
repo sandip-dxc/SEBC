@@ -20,12 +20,6 @@
 <br><code>sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt</code></br>
 
 
-<br> command for DB version </br>
-<br><code>[root@ip-172-31-13-124 yum.repos.d]# rpm -qa|grep maria</code></br>
-<br><code>mariadb-libs-5.5.52-1.el7.x86_64</code></br>
-<br><code>mariadb-server-5.5.52-1.el7.x86_64</code></br>
-<br><code>mariadb-5.5.52-1.el7.x86_64</code></br>
-
 <br> Hostname of MariaDB server </br>
 
 <br><code>[root@ip-172-31-13-124 yum.repos.d]# hostname</code></br>
