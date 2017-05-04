@@ -80,4 +80,4 @@
 
 <br></br>
 
-<br>/************** END OF ISSUE # 1 ***************/</br>
+<br>/************** END OF ISSUE "CHALLENGES SETUP" ***************/</br>
