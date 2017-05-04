@@ -64,19 +64,18 @@
 <br></br>
 
 <br>Listing of users and groups</br>
-<br><code>grep 'kiwis\|aussies' /etc/group;</code></br>
+
 
 <br><code>[root@ip-172-31-13-124 ~]# grep 'kiwis\|aussies' /etc/group</code></br>
 <br><code>kiwis:x:9980:jemaine</code></br>
 <br><code>aussies:x:9990:cate</code></br>
 
 
-<br><code>grep 'cate\|jemaine' /etc/passwd;</code></br>
+
 
 <br><code>[root@ip-172-31-13-124 ~]# grep 'cate\|jemaine' /etc/passwd</code></br>
 <br><code>cate:x:2300:2300:cate, Hadoop Aussie:/home/cate:/bin/bash</code></br>
 <br><code>jemaine:x:2900:2900:jemaine, Hadoop Kiwi:/home/jemaine:/bin/bash</code></br>
-
 
 
 <br></br>
