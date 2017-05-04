@@ -130,6 +130,57 @@
 
 <br>/************** START OF CHALLENGE # 2 ************/</br>
 
+<br></br>
+<br><code>ls /etc/yum.repos.d</code></br>
+<br><code>CentOS-Base.repo  CentOS-CR.repo  CentOS-Debuginfo.repo  CentOS-fasttrack.repo  CentOS-Media.repo  CentOS-Sources.repo  CentOS-Vault.repo</code></br>
+<br></br>
 
 
+<br><code>/usr/share/cmf/schema/scm_prepare_database.sh mysql -v -u root -p scm scm scm</code></br>
+<br><code>systemctl status cloudera-scm-server</code></br>
+<br><code>systemctl start cloudera-scm-server</code></br>
+<br><code>cat /etc/cloudera-scm-server/db.properties</code></br>
+
+<br></br>
+
+
+<br>/************** END OF CHALLENGE # 2 ***************/</br>
+
+<br>/************** START OF CHALLENGE # 3 ************/</br>
+
+
+
+<br></br>
+<br>hdfs dfs -mkdir /user/usr1</br>
+<br>hdfs dfs -mkdir /user/usr2</br>
+
+<br></br>
+<br>hdfs dfs -ls /user</br>
+<br><code> [OUTPUT]  </code></br>
+
+<br></br>
+<br>API</br>
+
+<br>Go to URL http://cm:7180/api/version</br>
+<br>Go to URL http://cm:7180/api/v13/hosts</br> 
+
+
+HUE
+
+<br>/************** END OF CHALLENGE # 3 ***************/</br>
+
+<br>/************** START OF CHALLENGE # 4 ************/</br>
+
+hadoop jar hadoop-*examples*.jar teragen 10000000000 /user/hduser/terasort-input
+
+Teragen
+
+hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar teragen 655360 -D dfs.block.size=16777216 /user/xxxxx/X_perf_input
+
+Terasort
+
+hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar terasort -Dmapred.reduce.tasks=426 -Dmapred.map.tasks=1278 -Ddfs.replication=1 /user/xxxxx/X_perf_input /user/xxxxx/ATO_perf_output
+
+
+Ref: http://www.michael-noll.com/blog/2011/04/09/benchmarking-and-stress-testing-an-hadoop-cluster-with-terasort-testdfsio-nnbench-mrbench/
 
