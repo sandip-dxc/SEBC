@@ -20,5 +20,28 @@
 <br><code>sslcacert=/etc/pki/rhui/cdn.redhat.com-chain.crt</code></br>
 
 
+<br> command for DB version </br>
+<br><code>[root@ip-172-31-13-124 yum.repos.d]# rpm -qa|grep maria</code></br>
+<br><code>mariadb-libs-5.5.52-1.el7.x86_64</code></br>
+<br><code>mariadb-server-5.5.52-1.el7.x86_64</code></br>
+<br><code>mariadb-5.5.52-1.el7.x86_64</code></br>
+
+<br> Hostname of MariaDB server </br>
+
+<br><code>[root@ip-172-31-13-124 yum.repos.d]# hostname</code></br>
+<br><code>ip-172-31-13-124.ap-southeast-2.compute.internal</code></br>
+
+
+<br> command and output for DB version installed </br>
+<br><code>[root@ip-172-31-13-124 yum.repos.d]# rpm -qa|grep maria</code></br>
+<br><code>mariadb-libs-5.5.52-1.el7.x86_64</code></br>
+<br><code>mariadb-server-5.5.52-1.el7.x86_64</code></br>
+<br><code>mariadb-5.5.52-1.el7.x86_64</code></br>
+
+<br> command and output for listing the Databases created  </br>
+
+<br>Please refer to 2_db_server.png for a screenshot of that command annd output</br>
+
+
 
 <br>/************** END OF CHALLENGE # 1 ***************/</br>
