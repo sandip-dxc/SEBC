@@ -5,6 +5,7 @@
 <br><code>
 
 <br><code>[root@ip-172-31-13-124 ~]# yum list all|grep mariadb-server</code></br>
+<br></br>
 <br><code>mariadb-server.x86_64       1:5.5.52-1.el7      rhui-REGION-rhel-server-releases</code></br>
 <br><code>[root@ip-172-31-13-124 ~]#</code></br>
 <br>==============================================</br>
