@@ -58,6 +58,20 @@
 <br><code>All done, your SCM database is configured correctly!</code></br>
 <br></br>
 
+<br>First line from Cloudera-scm-log</br>
+
+<br><code>[root@ip-172-31-13-124 cloudera-scm-server]# head -1 cloudera-scm-server.log</code></br>
+<br></br>
+<br><code>2017-05-04 20:18:43,354 INFO main:com.cloudera.server.cmf.Main: Starting SCM Server. JVM Args: [-Dlog4j.configuration=file:/etc/cloudera-scm-server/log4j.properties, -Dfile.encoding=UTF-8, -Dcmf.root.logger=INFO,LOGFILE, -Dcmf.log.dir=/var/log/cloudera-scm-server, -Dcmf.log.file=cloudera-scm-server.log, -Dcmf.jetty.threshhold=WARN, -Dcmf.schema.dir=/usr/share/cmf/schema, -Djava.awt.headless=true, -Djava.net.preferIPv4Stack=true, -Dpython.home=/usr/share/cmf/python, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+HeapDumpOnOutOfMemoryError, -Xmx2G, -XX:MaxPermSize=256m, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=/tmp, -XX:OnOutOfMemoryError=kill -9 %p], Args: [], Version: 5.11.0 (#101 built by jenkins on 20170412-1255 git: 70cb1442626406432a6e7af5bdf206a384ca3f98)</code></br>
+
+<br>line containing "Started Jetty Server"</br>
+<br><code>[root@ip-172-31-13-124 cloudera-scm-server]# cat cloudera-scm-server.log|grep "Started Jetty server"</code></br>
+<br></br>
+<br><code>2017-05-04 20:20:08,329 INFO WebServerImpl:com.cloudera.server.cmf.WebServerImpl: Started Jetty server.</code></br>
+
+
+
+
 <br>Displaying the content of db.properties</br>
 <br></br>
 <br><code>[root@ip-172-31-13-124 yum.repos.d]# cat /etc/cloudera-scm-server/db.properties</code></br>
@@ -76,3 +90,5 @@
 <br><code>com.cloudera.cmf.db.password=scm</code></br>
 <br><code>[root@ip-172-31-13-124 yum.repos.d]#</code></br>
 <br></br>
+
+<br>/************** END OF CHALLENGE # 2 ************/</br>
