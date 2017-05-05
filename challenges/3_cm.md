@@ -19,6 +19,7 @@
 <br></br>
 
 <br>output of CM API call ../api/v14/hosts</br>
+# <center>
 
 {
   "items" : [ {
@@ -83,9 +84,10 @@
     "totalPhysMemBytes" : 15332917248
   } ]
 }
-
+# <center>
 <br></br>
 <br>Output of CM API call ../api/v6/clusters/<githubName>/services </br>
+# <center>
 {
   "items" : [ {
     "name" : "hive",
