@@ -1,4 +1,4 @@
-<br>/************** END OF CHALLENGE # 1 ***************/</br>
+<br>/************** START OF CHALLENGE # 3 ***************/</br>
 
 
 <br>Refer to 3_CM_CDH_Version_Cluster_name_info.png for the version of CM, CDH and name of the cluster as per my github handle</br>
